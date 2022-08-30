@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+      <header>
+        <h1>Welcome to PHONE HUNTER</h1>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <div class="mb-3">
+                
+                <input type="text" class="form-control w-50" id="exampleFormControlInput1" placeholder="Search mobile">
+                <div class="btn btn-primary" id="search-btn">Search</div>
+              </div>
+        </section>
+        <section >
+
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="phone-container">
+                
+                
+              </div>
+              <div class="d-none mt-5" id="No-found-massage">
+                <h2>No phone is found.Try to search other model</h2>
+              </div>
+        </section>
+
+        <section class="text-center d-none" id="veiw-all-btn">
+            <div class="btn btn-primary m-5" id="btn-view-all">
+                View All
+            </div>
+        </section>
+        <section  class="d-none" id="load-spinner">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+        </section>
+
+        <section>
+            <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="release-date"> </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
